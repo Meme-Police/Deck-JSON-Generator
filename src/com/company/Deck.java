@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class Deck
 {
+
+    String deckName;
     List<Card> deck = new ArrayList<Card>();
 
     void addCard()

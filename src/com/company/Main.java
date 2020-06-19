@@ -8,13 +8,17 @@ public class Main {
 
     public static void main(String[] args)
     {
+        String input = "";
         boolean done = false;
         Gson gson = new Gson();
         Scanner sc = new Scanner(System.in);
         Deck deck = new Deck();
+        System.out.println("Deck Name:");
+        input = sc.nextLine().toString();
+        deck.deckName = input;
+
         while (!done)
         {
-            String input = "";
             deck.addCard();
             System.out.println("Done? (y/n)");
             input = sc.nextLine().toString();
